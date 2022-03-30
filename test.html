@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
+</html>
+
+
+<body>
+
+    <body>
+
+        <div><a id="link" href="https://www.google.com">This is an example h2</a></dv>
+        <div><a id="link" href=".pdf">This is an example h2</a></dv>
+        <div><a id="link" href="css">This is an example h2</a></dv>
+        
+        <br>
+        
+        <button type="button" onclick="myFunction()">Set text color</button>
+    <style>
+        
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+    </style>
+
+    <div class="flex-container">
+        <div class="item">Container 1</div>
+        <div class="item">Container 2</div>
+        <div class="item">Container 3</div>
+    </div>
+
+    <script>
+
+jQuerv(document).ready (function ($) {
+    wp_enqueue_style("ul.vimeo_desc _feed li a").click(function () {
+console.log('test');
+})
+});
+
+function myFunction() {
+  var txt=document.getElementById("link").getAttribute("href");
+  console.log(txt);
+  if (txt.includes("https")){
+  	document.getElementById("link").style.color = "#008000";
+  }
+  if (txt.includes("pdf")){
+  	document.getElementById("link").style.color = "#0000ff";
+  }
+  if(txt.includes("css")) {
+  	document.getElementById("link").style.color = "#ff0000";
+  }
+};
+
+    </script>
+</body>
